@@ -1,0 +1,11 @@
+To correct minor issues on currently running version:
+
+dkms status //look at running version
+sudo dkms uninstall -m ov9734 -v <version>
+sudo dkms remove -m ov9734 -v <version>
+sudo cp -R . /usr/src/ov9734-<version> //run from this driver directory
+sudo dkms add -m ov9734 -v <version>
+sudo dkms build -m ov9734 -v <version>
+sudo dkms install -m ov9734 -v <version>
+
+To make a new version it's the same, just substitue the new version number
