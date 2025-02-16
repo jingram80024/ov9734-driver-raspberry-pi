@@ -1102,7 +1102,7 @@ static struct i2c_driver ov9734_i2c_driver = {
 		.name = "ov9734",
 		.pm = &ov9734_pm_ops,
 	},
-	.probe_new = ov9734_probe,
+	.probe = ov9734_probe,
 	.remove = ov9734_remove,
 	.id_table = ov9734_id,
 };
